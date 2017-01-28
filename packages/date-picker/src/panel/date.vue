@@ -341,7 +341,11 @@
         } else if (this.selectionMode === 'year') {
           this.currentView = 'year';
         } else {
-          this.currentView = 'date';
+          if (this.defaultYear) {
+            this.currentView = 'year';
+          } else {
+            this.currentView = 'date';
+          }
         }
 
         if (this.selectionMode !== 'week') {
@@ -374,6 +378,7 @@
         value: '',
         showTime: false,
         selectionMode: 'day',
+        defaultYear: false,
         shortcuts: '',
         visible: false,
         currentView: 'date',

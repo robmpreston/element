@@ -413,6 +413,7 @@ export default {
         this.picker.width = this.reference.getBoundingClientRect().width;
         this.picker.showTime = this.type === 'datetime' || this.type === 'datetimerange';
         this.picker.selectionMode = this.selectionMode;
+        this.picker.defaultYear = this.defaultYear;
         if (this.format) {
           this.picker.format = this.format;
         }

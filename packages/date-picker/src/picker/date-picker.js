@@ -15,6 +15,10 @@ export default {
   name: 'ElDatePicker',
 
   props: {
+    defaultYear: {
+      type: Boolean,
+      default: false
+    },
     type: {
       type: String,
       default: 'date'
